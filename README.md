@@ -90,54 +90,7 @@ To install the MultiPDF Chat App, please follow these steps:
 huggingface_api_token=your_secrit_api_key
 ```
 
-## Usage
------
-To use the MultiPDF Chat App, follow these steps:
 
-1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
-
-2. Run the `app.py` file using the Streamlit CLI. Execute the following command:
-   ```
-   streamlit run app.py
-   ```
-
-3. The application will launch in your default web browser, displaying the user interface.
-
-4. Load multiple PDF documents into the app by following the provided instructions.
-
-5. Ask questions in natural language about the loaded PDFs using the chat interface.
-
-## Contributing
-------------
-This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
-
-## License
--------
-The MultiPDF Chat App is released under the [MIT License](https://opensource.org/licenses/MIT).
-
-
-
-
-demo=https://bit.ly/3SYC9RI
-
-
-
-
-
-
-![image](https://github.com/bhaskatripathi/pdfGPT/assets/35177508/11549b24-9ed4-4dcb-a877-bad9c2266bf9)
-
-
-### Note on model performance
-```If you find the response for a specific question in the PDF is not good using Turbo models, then you need to understand that Turbo models such as gpt-3.5-turbo are chat completion models and will not give a good response in some cases where the embedding similarity is low. Despite the claim by OpenAI, the turbo model is not the best model for Q&A. In those specific cases, either use the good old text-DaVinci-003 or use GPT4 and above. These models invariably give you the most relevant output.```
-
-# Upcoming Release Pipeline:
-1. Support for Falcon, Vicuna, Meta Llama
-2. OCR Support
-3. Multiple PDF file support
-4. OCR Support
-5. Node.Js based Web Application - With no trial, no API fees. 100% Open source.
-    
 ### Problem Description : 
 1. When you pass a large text to Open AI, it suffers from a 4K token limit. It cannot take an entire pdf file as an input
 2. Open AI sometimes becomes overtly chatty and returns irrelevant response not directly related to your query. This is because Open AI uses poor embeddings.
